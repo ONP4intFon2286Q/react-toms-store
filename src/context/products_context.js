@@ -32,7 +32,6 @@ export const ProductsProvider = ({ children }) => {
   const openSidebar = () => {
     dispatch({ type: SIDEBAR_OPEN });
   };
-
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE });
   };
@@ -47,9 +46,8 @@ export const ProductsProvider = ({ children }) => {
       dispatch({ type: GET_PRODUCTS_ERROR });
     }
   };
-
   const fetchSingleProduct = async (url) => {
-    dispatch({ type: GET_PRODUCTS_BEGIN });
+    dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
     try {
       const response = await axios.get(url);
       const singleProduct = response.data;
@@ -65,7 +63,12 @@ export const ProductsProvider = ({ children }) => {
 
   return (
     <ProductsContext.Provider
-      value={{ ...state, openSidebar, closeSidebar, fetchSingleProduct }}
+      value={{
+        ...state,
+        openSidebar,
+        closeSidebar,
+        fetchSingleProduct,
+      }}
     >
       {children}
     </ProductsContext.Provider>

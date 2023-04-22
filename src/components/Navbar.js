@@ -16,7 +16,7 @@ const Nav = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} alt="comfy sloth" />
+            <img className="logoMain" src={logo} alt="logo" />
           </Link>
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
@@ -49,6 +49,10 @@ const NavContainer = styled.nav`
   align-items: center;
   justify-content: center;
 
+  .logoMain {
+    transform: scale(0.4);
+  }
+
   .nav-center {
     width: 90vw;
     margin: 0 auto;
@@ -66,7 +70,7 @@ const NavContainer = styled.nav`
   .nav-toggle {
     background: transparent;
     border: transparent;
-    color: var(--clr-primary-5);
+    color: var(--main-black);
     cursor: pointer;
     svg {
       font-size: 2rem;
@@ -94,13 +98,13 @@ const NavContainer = styled.nav`
         margin: 0 0.5rem;
       }
       a {
-        color: var(--clr-grey-3);
+        color: var(--main-black);
         font-size: 1rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
         &:hover {
-          border-bottom: 2px solid var(--clr-primary-7);
+          border-bottom: 2px solid var(--main-gray);
         }
       }
     }

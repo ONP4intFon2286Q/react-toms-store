@@ -96,8 +96,14 @@ const CheckoutForm = () => {
         <article>
           <h4>Hello, {myUser && myUser.name}</h4>
           <p>Your total is {formatPrice(shipping_fee + total_amount)}</p>
-          <p>Fictional website, do not enter your card information.</p>
-          <p>Test Card Number: 4242 4242 4242 4242</p>
+          <p>
+            This is a fictional website, do not enter your real card
+            information.
+          </p>
+          <p>
+            Test Card: 4242 4242 4242 4242 &nbsp; Exp. 02/24 &nbsp; CVC 424
+            &nbsp; ZIP 42424
+          </p>
         </article>
       )}
       <form id="payment-form" onSubmit={handleSubmit}>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { formatPrice } from "../utils/helpers";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 const Product = ({ image, name, price, id }) => {
   return (
     <Wrapper>
@@ -14,17 +13,21 @@ const Product = ({ image, name, price, id }) => {
         </Link>
       </div>
       <footer>
-        <h5>{name}</h5>
+        <Link to={`/products/${id}`}>
+          <h5>{name}</h5>
+        </Link>
         <p>{formatPrice(price)}</p>
       </footer>
     </Wrapper>
   );
 };
 
+// Home / Products
+
 const Wrapper = styled.article`
   .container {
     position: relative;
-    background: var(--clr-black);
+    background: var(--main-white);
     border-radius: var(--radius);
   }
   img {
@@ -51,7 +54,7 @@ const Wrapper = styled.article`
     cursor: pointer;
     svg {
       font-size: 1.25rem;
-      color: var(--clr-white);
+      color: var(--main-black);
     }
   }
   .container:hover img {
@@ -73,7 +76,7 @@ const Wrapper = styled.article`
   }
 
   footer p {
-    color: var(--clr-primary-5);
+    color: var(--main-gray);
     letter-spacing: var(--spacing);
   }
 `;

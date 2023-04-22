@@ -5,13 +5,9 @@ const Contact = () => {
   return (
     <Wrapper>
       <div className="section-center">
-        <h3>Join our newsletter and get 20% off</h3>
+        <h3>Join our newsletter and get 5% off</h3>
         <div className="content">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perferendis odit neque est dicta a amet magnam fugiat rem adipisci
-            nihil?
-          </p>
+          <p>Not applicable for on-demand products.</p>
           <form className="contact-form" action="" method="POST">
             <input
               type="email"
@@ -36,7 +32,7 @@ const Wrapper = styled.section`
   p {
     line-height: 2;
     max-width: 45em;
-    color: var(--clr-grey-5);
+    color: var(--main-black);
   }
   .contact-form {
     width: 90vw;
@@ -49,11 +45,11 @@ const Wrapper = styled.section`
   .submit-btn {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border: 2px solid var(--clr-black);
+    border: 2px solid var(--main-gray);
   }
   .form-input {
     border-right: none;
-    color: var(--clr-grey-3);
+    color: var(--main-black);
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
   }
@@ -62,19 +58,19 @@ const Wrapper = styled.section`
     border-bottom-right-radius: var(--radius);
   }
   .form-input::placeholder {
-    color: var(--clr-black);
+    color: var(--main-black);
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    color: var(--main-white);
+    background: var(--main-gray);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
     transition: var(--transition);
-    color: var(--clr-black);
   }
   .submit-btn:hover {
-    color: var(--clr-white);
+    background: var(--main-rollover);
   }
   @media (min-width: 992px) {
     .content {

@@ -45,6 +45,8 @@ const Sidebar = () => {
   );
 };
 
+// Nav-bar on small screens
+
 const SidebarContainer = styled.div`
   text-align: center;
   .sidebar-header {
@@ -57,14 +59,14 @@ const SidebarContainer = styled.div`
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
+    color: red;
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
+    color: var(--main-black);
     margin-top: 0.2rem;
   }
   .close-btn:hover {
-    color: var(--clr-red-light);
+    color: var(--main-rollover);
   }
   .logo {
     justify-self: center;
@@ -79,7 +81,7 @@ const SidebarContainer = styled.div`
     font-size: 1rem;
     text-transform: capitalize;
     padding: 1rem 1.5rem;
-    color: var(--clr-grey-3);
+    color: var(--main-black);
     transition: var(--transition);
     letter-spacing: var(--spacing);
   }
@@ -87,8 +89,7 @@ const SidebarContainer = styled.div`
   .links a:hover {
     padding: 1rem 1.5rem;
     padding-left: 2rem;
-    background: var(--clr-grey-10);
-    color: var(--clr-grey-2);
+    background: var(--main-white);
   }
 
   .sidebar {
@@ -97,7 +98,7 @@ const SidebarContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-white);
+    background: #fff;
     transition: var(--transition);
     transform: translate(-100%);
     z-index: -1;

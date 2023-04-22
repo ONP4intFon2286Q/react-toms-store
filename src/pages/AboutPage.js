@@ -15,12 +15,16 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            corporis ab, neque ratione sequi similique molestiae, soluta animi
-            eius repellendus quod et possimus harum officia vitae laudantium nam
-            enim tenetur officiis labore a. Nihil eligendi nulla nobis fugiat
-            excepturi architecto, maxime porro, natus quasi voluptate, minima
-            obcaecati non optio ex!
+            Since its inception, Tom's Art has been committed to a single
+            mission: to encourage artists and designers who share their passion
+            for beauty and leave their mark on the world. We believe that
+            creativity has an immense power: to express emotions no matter the
+            language. We support contemporary creators because their creativity
+            opens minds and brings people together. Artists and designers offer
+            us their visions of society through their unique perspectives. Every
+            day, we work hand in hand with them in order to shake up
+            conventions. Support contemporary creatives with us and join our
+            community of art and design lovers.
           </p>
         </article>
       </Wrapper>

@@ -17,13 +17,13 @@ const Wrapper = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--clr-black);
+  background: var(--main-white);
   text-align: center;
   span {
-    color: var(--clr-primary-5);
+    color: var(--main-black);
   }
   h5 {
-    color: var(--clr-white);
+    color: var(--main-black);
     margin: 0.1rem;
 
     font-weight: 400;

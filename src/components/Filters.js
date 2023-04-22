@@ -164,9 +164,8 @@ const Wrapper = styled.section`
   }
   .search-input {
     padding: 0.5rem;
-    background: var(--clr-grey-10);
+    background: var(--main-white);
     border-radius: var(--radius);
-    border-color: transparent;
     letter-spacing: var(--spacing);
   }
   .search-input::placeholder {
@@ -182,14 +181,14 @@ const Wrapper = styled.section`
     border: none;
     border-bottom: 1px solid transparent;
     letter-spacing: var(--spacing);
-    color: var(--clr-grey-5);
+    color: var(--main-black);
     cursor: pointer;
   }
   .active {
-    border-color: var(--clr-grey-5);
+    border-color: var(--main-blue);
   }
   .company {
-    background: var(--clr-grey-10);
+    background: var(--main-white);
     border-radius: var(--radius);
     border-color: transparent;
     padding: 0.25rem;
@@ -203,7 +202,7 @@ const Wrapper = styled.section`
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    background: #222;
+    background: var(--main-black);
     margin-right: 0.5rem;
     border: none;
     cursor: pointer;
@@ -213,7 +212,7 @@ const Wrapper = styled.section`
     justify-content: center;
     svg {
       font-size: 0.5rem;
-      color: var(--clr-white);
+      color: var(--main-white);
     }
   }
   .all-btn {
@@ -242,8 +241,8 @@ const Wrapper = styled.section`
     max-width: 200px;
   }
   .clear-btn {
-    background: var(--clr-red-dark);
-    color: var(--clr-white);
+    background: var(--main-white);
+    color: var(--main-black);
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
   }

@@ -13,7 +13,6 @@ import {
 } from "../components";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
 const SingleProductPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -28,22 +27,21 @@ const SingleProductPage = () => {
     fetchSingleProduct(`${url}${id}`);
     // eslint-disable-next-line
   }, [id]);
-
   useEffect(() => {
     if (error) {
       setTimeout(() => {
-        navigate.push("/");
+        navigate("/");
       }, 3000);
     }
     // eslint-disable-next-line
   }, [error]);
-
   if (loading) {
     return <Loading />;
   }
   if (error) {
     return <Error />;
   }
+
   const {
     name,
     price,
@@ -74,11 +72,11 @@ const SingleProductPage = () => {
               {stock > 0 ? "In stock" : "out of stock"}
             </p>
             <p className="info">
-              <span>SKU : </span>
+              <span>SKU :</span>
               {sku}
             </p>
             <p className="info">
-              <span>Brand : </span>
+              <span>Brand :</span>
               {company}
             </p>
             <hr />

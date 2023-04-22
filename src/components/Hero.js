@@ -8,15 +8,13 @@ const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
-        <h1>
-          design your <br />
-          comfort zone
-        </h1>
+        <h1>The Best Artists</h1>
         <p>
-          Hero js page info goes here Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Quidem, praesentium doloribus! Tempora quaerat id
-          maxime fugiat quos amet laboriosam corporis placeat expedita? Repellat
-          asperiores adipisci saepe beatae fugiat similique nihil?
+          Why buy photographs or paintings online? Because we carefully select
+          artists from around the world using our rigorous guidelines: number of
+          exhibitions, artist residencies, awards and inclusion in public and
+          private collections. We make the whole experience easy by taking care
+          of the delivery, the customs and the framing of the work.
         </p>
         <Link to="/products" className="btn hero-btn">
           shop now
@@ -42,7 +40,7 @@ const Wrapper = styled.section`
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
+    color: var(--main-black);
     font-size: 1rem;
   }
   @media (min-width: 992px) {
@@ -84,7 +82,7 @@ const Wrapper = styled.section`
       position: absolute;
       width: 10%;
       height: 80%;
-      background: var(--clr-primary-9);
+      background: var(--main-white);
       bottom: 0%;
       left: -8%;
       border-radius: var(--radius);

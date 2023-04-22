@@ -73,7 +73,7 @@ const Wrapper = styled.article`
   }
 
   .color {
-    color: var(--clr-grey-5);
+    color: var(--main-black);
     font-size: 0.75rem;
     letter-spacing: var(--spacing);
     text-transform: capitalize;
@@ -91,7 +91,7 @@ const Wrapper = styled.article`
     }
   }
   .price-small {
-    color: var(--clr-primary-5);
+    color: var(--main-black);
   }
   .amount-btns {
     width: 75px;
@@ -105,11 +105,11 @@ const Wrapper = styled.article`
     }
   }
   .remove-btn {
-    color: var(--clr-white);
+    color: var(--main-white);
     background: transparent;
     border: transparent;
     letter-spacing: var(--spacing);
-    background: var(--clr-red-dark);
+    background: var(--main-black);
     width: 1.5rem;
     height: 1.5rem;
     display: flex;
@@ -123,7 +123,7 @@ const Wrapper = styled.article`
     .subtotal {
       display: block;
       margin-bottom: 0;
-      color: var(--clr-grey-5);
+      color: var(--main-black);
       font-weight: 400;
       font-size: 1rem;
     }
@@ -133,7 +133,7 @@ const Wrapper = styled.article`
     .price {
       display: block;
       font-size: 1rem;
-      color: var(--clr-primary-5);
+      color: var(--main-black);
       font-weight: 400;
     }
     .name {

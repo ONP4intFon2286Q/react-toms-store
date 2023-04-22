@@ -82,8 +82,8 @@ const Wrapper = styled.section`
     column-gap: 0.5rem;
     button {
       background: transparent;
-      border: 1px solid var(--clr-black);
-      color: var(--clr-black);
+      border: 1px solid var(--main-gray);
+      color: var(--main-gray);
       width: 1.5rem;
       border-radius: var(--radius);
       height: 1.5rem;
@@ -96,8 +96,7 @@ const Wrapper = styled.section`
       }
     }
     .active {
-      background: var(--clr-black);
-      color: var(--clr-white);
+      color: var(--main-black);
     }
   }
 
