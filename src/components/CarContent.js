@@ -42,15 +42,17 @@ const Wrapper = styled.section`
     border-color: transparent;
     text-transform: capitalize;
     padding: 0.25rem 0.5rem;
-    background: var(--clr-primary-5);
-    color: var(--main-white);
+    color: var(--main-black);
+    background: var(--main-white);
     border-radius: var(--radius);
     letter-spacing: var(--spacing);
     font-weight: 400;
     cursor: pointer;
+    font-size: 1rem;
   }
   .clear-btn {
-    background: var(--clr-black);
+    font-size: 1rem;
+    background: var(--main-white);
   }
 `;
 export default CartContent;
