@@ -20,7 +20,6 @@ const Wrapper = styled.section`
   min-height: 20vh;
   display: flex;
   align-items: center;
-
   color: var(--main-gray);
 
   a {
@@ -29,7 +28,7 @@ const Wrapper = styled.section`
     transition: var(--transition);
   }
   a:hover {
-    color: var(--main-rollover);
+    color: var(--main-blue);
   }
 `;
 

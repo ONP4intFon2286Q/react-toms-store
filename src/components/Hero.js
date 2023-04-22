@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import heroBcg from "../assets/hero-bcg.jpeg";
-import heroBcg2 from "../assets/hero-bcg-2.jpeg";
+import heroBcg from "../assets/hero-bcg.jpg";
+import heroBcg2 from "../assets/hero-bcg-2.jpg";
 
 const Hero = () => {
   return (
@@ -68,24 +68,27 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
       display: block;
       object-fit: cover;
+      box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.35);
     }
     .accent-img {
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 250px;
-      transform: translateX(-50%);
+      width: 390px;
+      transform: translateX(-30%) translateY(25%);
       border-radius: var(--radius);
+      box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.35);
     }
     .img-container::before {
       content: "";
       position: absolute;
-      width: 10%;
-      height: 80%;
-      background: var(--main-white);
+      width: 90%;
+      height: 90%;
+      background: var(--main-yellow);
       bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
+      left: -15%;
+      border-radius: 100%;
+      box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.35);
     }
   }
 `;

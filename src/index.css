@@ -5,8 +5,13 @@ Variables
 */
 
 :root {
-  /* Finest Artwork, Mission, Vision, Hist text */
+  /* Off white */
   --main-white: hsl(240, 3%, 94%);
+
+  /* Main colors */
+  --main-red: hsl(0, 100%, 61%);
+  --main-yellow: hsl(49, 100%, 50%);
+  --main-blue-paint: hsl(202, 100%, 50%);
 
   /* Home text top */
   --main-blue: hsl(208, 28%, 74%);

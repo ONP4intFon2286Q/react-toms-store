@@ -18,7 +18,7 @@ const Services = () => {
             const { id, icon, title, text } = service;
             return (
               <article key={id} className="service">
-                <span className="icon">{icon}</span>
+                <span className={`icon iconColor${id}`}>{icon}</span>
                 <h4>{title}</h4>
                 <p>{text}</p>
               </article>
@@ -39,6 +39,10 @@ const Wrapper = styled.section`
 
   background: #fff;
 
+  .section-center {
+    width: 100%;
+    height: 100%;
+  }
   .header h3 {
     margin-bottom: 2rem;
   }
@@ -49,18 +53,38 @@ const Wrapper = styled.section`
   }
   .services-center {
     margin-top: 4rem;
-    display: grid;
-    gap: 2.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .service {
     background: var(--main-white);
     text-align: center;
     padding: 2.5rem 2rem;
-    border-radius: var(--radius);
+    border-radius: 100%;
+    width: 360px;
+    height: 360px;
     p {
       color: var(--main-black);
     }
   }
+
+  .icon {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .iconColor1 {
+    color: var(--main-red);
+  }
+  .iconColor2 {
+    color: var(--main-yellow);
+  }
+  .iconColor3 {
+    color: var(--main-blue-paint);
+  }
+
   span {
     width: 4rem;
     height: 4rem;
