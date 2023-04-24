@@ -50,7 +50,7 @@ const NavContainer = styled.nav`
   justify-content: center;
 
   .logoMain {
-    transform: scale(0.4);
+    transform: scale(0.9);
   }
 
   .nav-center {

@@ -9,7 +9,7 @@ const Filters = () => {
     filters: {
       text,
       category,
-      company,
+      artist,
       color,
       min_price,
       price,
@@ -22,7 +22,7 @@ const Filters = () => {
   } = useFilterContext();
 
   const categories = getUniqueValues(all_products, "category");
-  const companies = getUniqueValues(all_products, "company");
+  const artists = getUniqueValues(all_products, "artist");
   const colors = getUniqueValues(all_products, "colors");
 
   return (
@@ -62,16 +62,16 @@ const Filters = () => {
             </div>
           </div>
 
-          {/* Company */}
+          {/* artist */}
           <div className="form-control">
-            <h5>company</h5>
+            <h5>Artist</h5>
             <select
-              name="company"
-              value={company}
+              name="artist"
+              value={artist}
               onChange={updateFilters}
-              className="company"
+              className="artist"
             >
-              {companies.map((c, index) => {
+              {artists.map((c, index) => {
                 return (
                   <option key={index} value={c}>
                     {c}
@@ -187,7 +187,7 @@ const Wrapper = styled.section`
   .active {
     border-color: var(--main-blue);
   }
-  .company {
+  .artist {
     background: var(--main-white);
     border-radius: var(--radius);
     border-color: transparent;
@@ -210,6 +210,7 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
     svg {
       font-size: 0.5rem;
       color: var(--main-white);
@@ -221,6 +222,7 @@ const Wrapper = styled.section`
     justify-content: center;
     margin-right: 0.5rem;
     opacity: 0.5;
+    color: var(--main-black);
   }
   .active {
     opacity: 1;
